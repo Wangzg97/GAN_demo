@@ -14,20 +14,20 @@ D是一个判别网络，判别一张图片是不是“真实的”。它的输�
 #### dataset.py：
 - 主要是处理用来训练的动漫头像图片。
 - 训练用的图片素材大小为[96, 96, 3]。[这里是链接](https://pan.baidu.com/s/17MuLkf35KEOhP7NSaPOL9w)。图片素材是在网上找的，忘记是哪位老哥的了，侵删。
-- 图片示例![Snipaste_2020-01-15_15-00-00.png](https://i.loli.net/2020/01/15/A1yLOQhvjExcDzg.png)
+- 图片示例  ![Snipaste_2020-01-15_15-00-00.png](https://i.loli.net/2020/01/15/A1yLOQhvjExcDzg.png)
 
 #### main.py
-简单的生成器与判别器
+简单的生成器与判别器  
 ![Snipaste_2020-01-15_15-03-59.png](https://i.loli.net/2020/01/15/5zTYE672ZK1Mprx.png)
 
 #### main2.py
-- 生成器：UNet256
+- 生成器：UNet256  
 ![Snipaste_2020-01-15_15-06-16.png](https://i.loli.net/2020/01/15/gvSpYCmWhH7sZ8J.png)
-- 判别器：PatchGAN
+- 判别器：PatchGAN  
 ![Snipaste_2020-01-15_15-06-27.png](https://i.loli.net/2020/01/15/PQhBqK683TLHysW.png)
 
 #### final.py
-- 生成器：考虑到生成器是从生成一个噪点开始的，因此UNet256中向下采样的过程没什么必要，所以去掉了向下采样的过程
+- 生成器：考虑到生成器是从生成一个噪点开始的，因此UNet256中向下采样的过程没什么必要，所以去掉了向下采样的过程  
 ![Snipaste_2020-01-15_15-09-25.png](https://i.loli.net/2020/01/15/yWpQNtvsA7bxgGD.png)
-- 判别器：在PatchGAN基础上改造
+- 判别器：在PatchGAN基础上改造  
 ![Snipaste_2020-01-15_15-09-37.png](https://i.loli.net/2020/01/15/AyvOfR6BwSxHj2V.png)
